@@ -14,15 +14,23 @@ with open("html/foot-traffic.html", "r", encoding="utf-8") as f:
     html_data = f.read()
 components.html(html_data, height=480)
 
-with open("html/foot-traffic-growth.html", "r", encoding="utf-8") as f:
-    html_data = f.read()
-components.html(html_data, height=480)
-
 st.markdown("""
 이 같은 변화는 유동인구에서도 확인된다. 2021년 23만명 수준이던 성수동의 주말 유동인구는 2025년 25만 5천명까지 증가했다. 2022년 이후 신사, 용산, 홍대, 건대 등 기존 인기 상권의 주말 유동인구 증가율이 하락세를 보인 것과 달리, 성수만은 상승세를 유지했다.           
 """)
 st.markdown("""
 """)
+
+st.image("html/.empty.png", width=800)
+
+st.markdown("""
+한국부동산원 ‘부동산통계정보시스템’에 따르면,
+뚝섬의 소규모 상가 공실률은 2020년부터 2025년까지 줄곧 5%대를 유지했다.
+서울 주요 상권과 비교하면 매우 낮은 수준이다. 그러나 이 수치가 곧 성수 상권의 안정적 운영을 의미하지는 않는다. 성수의 상가는 장기 임차 대신 팝업스토어 위주의 단기 임대로 변모했고, 공간의 점유는 끊임없이 교체되고 있다.
+""")
+
+st.markdown(“**서울 주요 상권 공실률**”)
+st.image("html/empty.jpeg", width=800)
+
 
 # 2                       
 st.subheader("공식이 되어버린 “팝업스토어 = 성수”")
@@ -62,9 +70,7 @@ st.markdown("""
 한국부동산원이 발표한 서울시 소규모상가 임대료 추이에 따르면, 성수동이 위치한 뚝섬 지역의 임대료는 2020년 40만원에서 2025년 2분기에 60만원까지 상승했다. 2024년 2분기를 기준으로 임대료 상승률을 보여주는 임대가격 지수 역시 2020년 2분기 84에서 2025년 2분기에 115로 오르며 5년 사이 약 35% 상승했다. 이는 서울 주요 상권 중 가장 높은 상승 폭이다.
 """)
 
-with open("html/estimated-sales.html", "r", encoding="utf-8") as f:
-    html_data = f.read()
-components.html(html_data, height=480)
+
 
 with open("html/burden-index.html", "r", encoding="utf-8") as f:
     html_data = f.read()
@@ -102,40 +108,6 @@ st.markdown("""
 """)
 
 # 5
-st.subheader("5%대 공실률, 법인 매수가 늘었다")
-
-with open("html/empty.html", "r", encoding="utf-8") as f:
-    html_data = f.read()
-components.html(html_data, height=480)
-
-st.markdown("""
-한국부동산원 ‘부동산통계정보시스템’에 따르면,
-뚝섬의 소규모 상가 공실률은 2020년부터 2025년까지 줄곧 5%대를 유지했다.
-서울 주요 상권과 비교하면 5%대 공실률은 낮은 수준이다. 그러나 이 수치가 곧 성수 상권의 안정적 운영을 의미하지는 않는다. 성수의 상가는 장기 임차 대신 팝업스토어 위주의 단기 임대로 변모했고, 공간의 점유는 끊임없이 교체되고 있다.
-""")
-
-st.image("html/image.jpeg", width=800)
-st.caption("팝업스토어 대관을 위해 공실로 남겨둔 상가")
-
-with open("html/transaction-type.html", "r", encoding="utf-8") as f:
-    html_data = f.read()
-components.html(html_data, height=480)
-
-st.markdown("""
-건물의 주인도 빠르게 바뀌고 있다. 국토교통부 실거래가 조회시스템의 상업·업무용 건물 매매 추이를 보면, 2024년부터 2025년까지 성수동 2가에서 발생한 총 209건의 거래 가운데 87건이 개인 매도· 기업 매수 거래였다. 개인 소유 건물이 기업으로 넘어간 거래 건수가 10건 중 4건에 달하는 셈이다.
-""")
-
-with open("html/transaction-vs-seoul.html", "r", encoding="utf-8") as f:
-    html_data = f.read()
-components.html(html_data, height=480)
-
-st.markdown("""
-성동구의 법인 매수 비중은 서울시 자치구당 평균을 웃돈다. 개인이 보유하던 상가 건물이 기업 소유로 전환되는 흐름이 성수에서 특히 두드러지게 나타나고 있다고 볼 수 있다. 낮은 공실률 뒤에서, 상권의 운영 방식과 소유 구조는 빠르게 대기업 중심으로 재편되고 있다. 법인은 투자의 개념으로 성수에 진입하고 있다. 생존을 위한 소상공인에게는 이전보다 훨씬 거대한 진입장벽이 형성됐다.
-""")
-st.markdown("""
-""")
-
-# 6
 st.subheader("도시의 성장을 누릴 수 없는 사람들")
 st.markdown("""
 성수동은 여전히 성장 중이다. 공실률은 낮고 방문객은 늘고 있다. 무신사 등 대기업의 투자와 주거단지 개발로 상권의 안정성도 강화되고 있다. 평지가 길어 추가적인 상권의 확장 또한 가능하다.
